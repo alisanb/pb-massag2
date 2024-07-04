@@ -33,13 +33,13 @@ document.getElementById('order_form').addEventListener('submit', function(event)
       alert(`Xahiş olunur ${field} əlavə edin`);
       isValid = false;
     } else if (fieldValue.length < rule.minLength) {
-      alert(`Ən azı ${rule.minLength} rəqəm olmalıdır`);
+      alert(`Ən azı ${rule.minLength} simvol olmalıdır`);
       isValid = false;
     } else if (fieldValue.length > rule.maxLength) {
-      alert(`Ən çox ${rule.maxLength} rəqəm olmalıdır`);
+      alert(`Ən çox ${rule.maxLength} simvol olmalıdır`);
       isValid = false;
     } else if (!rule.pattern.test(fieldValue)) {
-      alert(`${field} adınız və ya nömrəniz düzgün yığılmayıb. Xahiş olunur nümrəni sadəcə rəqəmlərdən, adınızı sadəcə hərflərdən yazasınız.`);
+      alert(`${field} düzgün yığılmayıb. Xahiş olunur nümrəni sadəcə rəqəmlərdən, adınızı sadəcə hərflərdən yazasınız.`);
       isValid = false;
     }
   });
